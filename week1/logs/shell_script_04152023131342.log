@@ -1,0 +1,61 @@
+START DOWNLOAD DATA
+WARNING: timestamping does nothing in combination with -O. See the manual
+for details.
+
+--2023-04-15 13:13:42--  https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=48549&Year=2020&Month=2&Day=14&timeframe=1&submit=%20Download+Data
+Resolving climate.weather.gc.ca (climate.weather.gc.ca)... 205.189.10.46
+Connecting to climate.weather.gc.ca (climate.weather.gc.ca)|205.189.10.46|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/force-download]
+Saving to: ‘/home/alator20/wcd-assignments/week1/input/2020.csv’
+
+     0K .......... .......... .......... .......... ..........  253K
+    50K .......... .......... .......... .......... ..........  507K
+   100K .......... .......... .......                          10.4M=0.3s
+
+2023-04-15 13:13:43 (427 KB/s) - ‘/home/alator20/wcd-assignments/week1/input/2020.csv’ saved [130712]
+
+WARNING: timestamping does nothing in combination with -O. See the manual
+for details.
+
+--2023-04-15 13:13:43--  https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=48549&Year=2021&Month=2&Day=14&timeframe=1&submit=%20Download+Data
+Resolving climate.weather.gc.ca (climate.weather.gc.ca)... 205.189.10.46
+Connecting to climate.weather.gc.ca (climate.weather.gc.ca)|205.189.10.46|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/force-download]
+Saving to: ‘/home/alator20/wcd-assignments/week1/input/2021.csv’
+
+     0K .......... .......... .......... .......... ..........  248K
+    50K .......... .......... .......... .......... ..........  533K
+   100K .......... .......... ...                              8.18M=0.3s
+
+2023-04-15 13:13:44 (415 KB/s) - ‘/home/alator20/wcd-assignments/week1/input/2021.csv’ saved [126714]
+
+WARNING: timestamping does nothing in combination with -O. See the manual
+for details.
+
+--2023-04-15 13:13:44--  https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=48549&Year=2022&Month=2&Day=14&timeframe=1&submit=%20Download+Data
+Resolving climate.weather.gc.ca (climate.weather.gc.ca)... 205.189.10.46
+Connecting to climate.weather.gc.ca (climate.weather.gc.ca)|205.189.10.46|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/force-download]
+Saving to: ‘/home/alator20/wcd-assignments/week1/input/2022.csv’
+
+     0K .......... .......... .......... .......... ..........  255K
+    50K .......... .......... .......... .......... ..........  562K
+   100K .......... .......... ...                              3.43M=0.3s
+
+2023-04-15 13:13:45 (424 KB/s) - ‘/home/alator20/wcd-assignments/week1/input/2022.csv’ saved [126636]
+
+Start to run Python Script
+Traceback (most recent call last):
+  File "/home/alator20/wcd-assignments/week1/scripts/python_script.py", line 18, in <module>
+    df_concat = pd.concat(li,axis=0, ignore_index=True)
+  File "/home/alator20/.local/lib/python3.10/site-packages/pandas/core/reshape/concat.py", line 372, in concat
+    op = _Concatenator(
+  File "/home/alator20/.local/lib/python3.10/site-packages/pandas/core/reshape/concat.py", line 429, in __init__
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate
+PYTHON RUNNING FAILED
+[ERROR:] RETURN CODE:  1
+[ERROR:] REFER TO THE LOG FOR THE REASON FOR THE FAILURE.
