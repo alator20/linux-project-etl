@@ -1,28 +1,7 @@
 #!/bin/bash
-. /home/project/.bash_profile
-. /etc/profile
 
 
-
-##############################################################
-# 1. Set Default Variables
-
-HOST=$HOSTNAME
-
-SHORT_DATE=`date '+%Y-%m-%d'`
-
-TIME=`date '+%H%M'`
-
-
-##############################################################
-# Product Variables
-
-PRODUCT_USERNAME=`whoami`
-
-##############################################################
-######### DO NOT MODIFY ABOVE THIS LINE ######################
-
-# Part 2: Setting up default variables
+# Part 1: Setting up default variables
 
 filenametime1=$(date +"%m%d%Y%H%M%S")
 filenametime2=$(date +"%Y-%m-%d %H:%M:%S")
